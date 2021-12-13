@@ -1,0 +1,75 @@
+.box {
+    background-color: azure;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.hr {
+    width: 50%;
+    margin: 0 auto;
+    border-width: .3px;
+    margin-bottom: 20px;
+    border-color: rgb(231, 231, 231);
+}
+
+.input {
+    display: block;
+    padding: 10px;
+    width: 310px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(177, 177, 177);
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+}
+
+.input::placeholder {
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+}
+
+.btn {
+    background-color: rgb(103, 103, 187);
+    border: none;
+    padding: 10px 34px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    background-color: rgb(75, 75, 149);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.link {
+    color: rgb(88, 88, 88);
+    transition: all .3s ease-in-out;
+}
+
+.link:hover {
+    color: rgb(31, 31, 31);
+}
+
+@media (max-width: 461px) {
+    .box {
+        padding: 15px;
+    }
+}

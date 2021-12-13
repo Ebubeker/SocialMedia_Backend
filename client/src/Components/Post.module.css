@@ -1,0 +1,40 @@
+.cardPost {
+    width: 72.5%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.interactionIcons {
+    display: flex;
+}
+
+.icon {
+    margin: 10px 30px 10px 0px;
+    color: rgb(90, 90, 90);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.date {
+    color: rgb(134, 134, 134);
+    margin-bottom: 20px;
+}
+
+@media(max-width: 645px) {
+    .image img {
+        height: 250px;
+    }
+}

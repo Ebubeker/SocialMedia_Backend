@@ -1,0 +1,48 @@
+.section {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.followBtn {
+    background-color: rgb(19, 68, 124);
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+}
+
+.followBtn:hover {
+    background-color: rgb(37, 91, 153);
+}
+
+.profile {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.profilename {
+    color: #000;
+    font-size: 15px;
+}
+
+
+@media(max-width: 1444px) {
+    .profilename {
+        color: #000;
+        font-size: 13px;
+    }
+}

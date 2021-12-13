@@ -1,0 +1,66 @@
+.input {
+    display: block;
+    padding: 10px;
+    width: 96.5%;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+    outline-color: white;
+    resize: none;
+    font-family: 'Outfit', sans-serif;
+}
+
+.input::placeholder {
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+}
+
+.btn {
+    background-color: rgb(19, 68, 124);
+    border: none;
+    padding: 10px 34px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    display: block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(48, 107, 173);
+}
+
+.containerforall {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.h3Design {
+    font-size: 30px;
+    color: rgb(19, 19, 19);
+    margin-top: 20px;
+}
+
+.contentCreationDiv {
+    background-color: rgb(201, 211, 252);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 821px) {
+    .input {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: 10px;
+    }
+}
