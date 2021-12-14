@@ -8,11 +8,13 @@ import subscribe from "./redux/store/subscribe";
 
 function App() {
   const [loggedIn, setloggedIn] = useState(false);
-  subscribe();
-  let stor = JSON.parse(window.localStorage.reduxState);
+  // let stor = JSON.parse(window.localStorage.reduxState);
+  let stor = JSON.parse(localStorage.getItem("reduxState"));
 
-  if (loggedIn !== stor.loggedIn && stor.loggedIn) {
-    setloggedIn(stor.loggedIn);
+  if (stor !== null) {
+    if (loggedIn !== stor.loggedIn && stor.loggedIn) {
+      setloggedIn(stor.loggedIn);
+    }
   }
 
   // let auth = userAuthenticated();
