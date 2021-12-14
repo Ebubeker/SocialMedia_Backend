@@ -46,7 +46,7 @@ route.route("/postContent").get((req, res) => {
   const post_Content = req.body.postContent;
   const tags = req.body.tags;
   const file = req.body.file;
-  console.log(post_Content);
+  res.json({ post_Content });
 });
 
 const VerifyJWT = (req, res, next) => {
