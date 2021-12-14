@@ -2,6 +2,7 @@ import {input, btn, containerforall, h3Design, contentCreationDiv} from './Creat
 import ModuleCss from '../Components/Navbar.module.css';
 import { Link } from 'react-router-dom';
 import {userAuthenticated} from '../security/checkAuth';
+import axios from 'axios'
 
 const CreatePost = ({profileName}) => {
 
