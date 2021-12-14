@@ -42,7 +42,7 @@ router.route("/confirmAccount/:id").get((req, res) => {
   });
 });
 
-route.route("/postContent").get((req, res) => {
+route.route("/postContent").post((req, res) => {
   const post_Content = req.body.postContent;
   const tags = req.body.tags;
   const file = req.body.file;
