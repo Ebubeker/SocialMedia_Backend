@@ -1,0 +1,62 @@
+.content {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.profileImage {
+    width: 50%;
+}
+
+.profileImage img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.BasicInfo {
+    width: 50%;
+}
+
+.BasicInfo p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.activityInfo {
+    text-align: center;
+}
+
+@media(max-width: 1444px) {
+    .content {
+        width: 69%;
+    }
+}
+
+@media(max-width: 938px) {
+    .content {
+        display: block;
+    }
+
+    .profileImage {
+        width: 100%;
+        text-align: center;
+    }
+
+    .BasicInfo {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 821px) {
+    .divider {
+        margin-top: 60px;
+    }
+}

@@ -25,6 +25,12 @@
     padding: 5px;
     border-radius: 50px;
     margin-top: 15px;
+    text-decoration: none;
+
+}
+
+.li {
+    list-style: none;
 }
 
 .profile img {
@@ -39,6 +45,7 @@
     font-size: 15px;
 }
 
+.linkUser {}
 
 @media(max-width: 1444px) {
     .profilename {

@@ -1,0 +1,83 @@
+.content {
+    width: 63%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+
+}
+
+.firstSide {
+    width: 48%;
+    background-color: rgb(224, 229, 255);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 20px;
+}
+
+.secondSide {
+    width: 48%;
+    background-color: rgb(224, 229, 255);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.h3design {
+    font-size: 30px;
+    color: rgb(19, 19, 19);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.followList {
+    width: 83%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.logout {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.logout p {
+    background-color: red;
+    width: 63%;
+    margin: 20px auto;
+    padding: 10px 0px;
+    border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+@media(max-width: 1444px) {
+    .content {
+        width: 73%;
+    }
+}
+
+@media(max-width: 1172px) {
+    .content {
+        width: 90%;
+    }
+}
+
+@media(max-width: 938px) {
+    .content{
+        display: block;
+    }
+
+    .secondSide {
+        width: 100%;
+    }
+
+    .firstSide {
+        width: 100%;
+    }
+}
+
+@media (max-width: 821px) {
+    .divider {
+        margin-top: 60px;
+    }
+}

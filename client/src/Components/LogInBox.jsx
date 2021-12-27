@@ -11,13 +11,9 @@ const LogInBox = () => {
     const passwordInput = useRef(null);
     let user = false;
     let history = useNavigate();
-    
-    const unsubscribe = store.subscribe(() => {
-      console.log("Store Changed", store.getState());
-    });
 
     const fetchData = () => {
-        axios.get(`https://social-media-backend-2210.herokuapp.com/login/confirmAccount/${userInput.current.value}_${passwordInput.current.value}`)
+        axios.get(`/login/confirmAccount/${userInput.current.value}_${passwordInput.current.value}`)
         .then((response)=>{
             const data = response.data;
             if(data.auth === true){
@@ -25,15 +21,15 @@ const LogInBox = () => {
             }
         })
     }
+
     
     const submitLogin = (e) => {
         e.preventDefault();
         fetchData();
         setTimeout(()=>{
             if(user){
-                store.dispatch(loggIn(userInput.current.value, user.token));
+                store.dispatch(loggIn(userInput.current.value, user.token, user.result._id));
                 subscribe();
-                unsubscribe();
                 window.location.reload(false);
                 history('/');
             }else{

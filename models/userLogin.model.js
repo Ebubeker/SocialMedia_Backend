@@ -24,6 +24,13 @@ const user = new Schema(
       type: String,
       required: true,
     },
+    activity: {
+      followers: Number,
+      followerUsers: Array,
+      following: Number,
+      followingUsers: Array,
+      Likes: Number,
+    },
   },
   { timestamps: true }
 );

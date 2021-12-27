@@ -3,17 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faPaperPlane, faBell } from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-router-dom';
 import ModuleCss from './Navbar.module.css';
-import store from '../redux/store/store';
-import {loggIn, loggOff} from '../redux/actions/actions';
 
 const Navbar = ({profileName}) => {
-
-    const loggOut = () => {
-        store.dispatch(loggOff());
-        subscribe();
-        unsubscribe();
-        history('/');
-    }
 
     return (
         <nav className={ModuleCss.navbar}>
@@ -29,9 +20,11 @@ const Navbar = ({profileName}) => {
                         <FontAwesomeIcon icon={faSearch} className={ModuleCss.searchIcon}/>
                     </div>
                     <div className={ModuleCss.interaction}>
-                        <FontAwesomeIcon className={ModuleCss.iconDesign} icon={faPaperPlane}/>
+                        <Link to="/inbox">
+                            <FontAwesomeIcon className={ModuleCss.iconDesign} icon={faPaperPlane}/>
+                        </Link>
                         <FontAwesomeIcon className={ModuleCss.iconDesign} icon={faBell}/>
-                        <Link onClick={loggOut} to="/"  className={ModuleCss.profile}>
+                        <Link to="/profile"  className={ModuleCss.profile}>
                             <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="human" />
                             <h3>{profileName}</h3>
                         </Link>

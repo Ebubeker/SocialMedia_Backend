@@ -1,0 +1,19 @@
+.commentContent {
+    margin-left: 20px;
+}
+
+.commentpara {
+    font-size: 13px;
+    color: rgb(70, 70, 70);
+    margin-top: 6px;
+}
+
+.timeComment {
+    color: rgb(105, 105, 105);
+    font-size: 11px;
+    float: right;
+}
+
+.wholComment{
+    padding-bottom: 10px;
+}

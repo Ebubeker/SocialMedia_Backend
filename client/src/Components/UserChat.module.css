@@ -1,0 +1,6 @@
+.box{
+    background-color: azure;
+    border: .5px black solid;
+    padding: 15px 10px;
+    cursor: pointer;
+}

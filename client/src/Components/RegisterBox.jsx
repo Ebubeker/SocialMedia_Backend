@@ -24,7 +24,7 @@ const LogInBox = () => {
                 password: password.current.value,
             }
     
-            axios.post('http://localhost:2000/login/createUser', newUser);
+            axios.post('/login/createUser', newUser);
 
             window.location = '/';
         }else{

@@ -1,10 +1,11 @@
 import * as actions from "./actionTypes";
 
-export const loggIn = (username, token) => ({
+export const loggIn = (username, token, id) => ({
   type: actions.LOGGIN,
   payload: {
     username,
     token,
+    id,
   },
 });
 

@@ -2,9 +2,10 @@
   "name": "ray-social",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://social-media-backend-2210.herokuapp.com/",
+  "proxy": "http://localhost:2000",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@reduxjs/toolkit": "^1.6.2",
